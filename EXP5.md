@@ -15,8 +15,31 @@ Write a python program to check the number is Armstrong number or not and inspec
 
 ### Program:
 
+```
+def binary_search(arr, x):  
+         low = 0 
+    high = len(arr) - 1 mid = 0 
+           while low <= high: 
+               mid = (high + low) // 2  
+               if arr[mid] < x: 
+                   low = mid + 1 elif arr[mid] > x: 
+               high = mid – 1 
+                   else: 
+           return -1 
+ 
+arr = [ 2, 3, 4, 10,40 ] 
+x = input(“Enter the element to be searched: ”);  
+try: 
+    x = int(x) 
+    result = binary_search(arr, x)  
+    if result != -1: 
+          print("Element is present at index",str(result)) 
+    else: 
+          print("Element is not present in array") 
+       except: 
+    print(“Enter a valid input!”)
 
-
+```
 
 
 
@@ -28,6 +51,11 @@ Write a python program to check the number is Armstrong number or not and inspec
 
 
 ### Output:
+
+![Screenshot 2025-04-23 085306](https://github.com/user-attachments/assets/babd18ed-c309-4afe-9a28-4084e9286128)
+
+![Screenshot 2025-04-23 085346](https://github.com/user-attachments/assets/1ef70544-9008-4857-ac0c-830fab8fef67)
+
 
 
 
